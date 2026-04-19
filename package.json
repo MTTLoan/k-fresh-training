@@ -3,12 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test",
-    "test:dev": "cross-env TEST_ENV=dev playwright test",
-    "test:qa": "cross-env TEST_ENV=qa playwright test",
-    "test:uat": "cross-env TEST_ENV=uat playwright test",
-    "test:stg": "cross-env TEST_ENV=staging playwright test",
-    "test:prod": "cross-env TEST_ENV=prod playwright test"
+    "test": "npx playwright test"
   },
   "keywords": [],
   "author": "",
