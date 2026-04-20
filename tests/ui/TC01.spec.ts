@@ -6,6 +6,7 @@ test("TC01 - Verify Empty Cart", async ({ page }) => {
   await expect(page.locator("#entry_217847")).toContainText(
     "Your shopping cart is empty!",
   );
+  await expect(page.getByRole("rowgroup")).toContainText("$0.00");
   await page.getByRole("button", { name: " Edit cart" }).click();
   await expect(page.locator("#content")).toContainText(
     "Your shopping cart is empty!",

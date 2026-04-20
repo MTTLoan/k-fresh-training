@@ -4,10 +4,22 @@ test("TC02 - Add Product to Cart", async ({ page }) => {
   await page.goto(
     "https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=62&search=macbook+pro",
   );
+  await page.waitForLoadState("networkidle");
+
+  // Click + twice to set quantity to 3
+  const plusButton = page.locator('button[data-spinner="up"]:visible').first();
+  await expect(plusButton).toBeVisible();
+  for (let i = 0; i < 2; i++) {
+    await plusButton.click();
+  }
+
+  // Verify quantity field displays value = 3
+  const quantityInput = page.locator('input[name="quantity"]:visible').first();
+  await expect(quantityInput).toHaveValue("3");
 
   const addToCartButton = page
-    .locator("button.btn-cart:not([disabled])")
-    .nth(1);
+    .locator("button.btn-cart:not([disabled]):visible")
+    .first();
   await expect(addToCartButton).toBeVisible();
   await addToCartButton.click();
 
@@ -25,4 +37,14 @@ test("TC02 - Add Product to Cart", async ({ page }) => {
     .locator("table.table.table-bordered", { hasText: "MacBook Pro" })
     .first();
   await expect(cartTable).toContainText("MacBook Pro");
+
+  // Verify quantity of "MacBook Pro" is 3
+  const cartRow = page
+    .locator("table.table.table-bordered")
+    .first()
+    .locator("tr", {
+      hasText: "MacBook Pro",
+    });
+  const cartQuantityInput = cartRow.locator('input[name^="quantity"]');
+  await expect(cartQuantityInput).toHaveValue("3");
 });

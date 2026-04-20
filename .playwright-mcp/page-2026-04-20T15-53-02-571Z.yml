@@ -1,0 +1,427 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - heading "Top categories close" [level=5] [ref=e4]:
+        - text: Top categories
+        - link "close" [ref=e5] [cursor=pointer]:
+          - /url: "#mz-component-1626147655"
+          - text: 
+      - navigation [ref=e8]:
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "Components" [ref=e12] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=25
+              - img [ref=e14]
+              - generic [ref=e17]: Components
+          - listitem [ref=e18]:
+            - link "Cameras" [ref=e19] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=33
+              - img [ref=e21]
+              - generic [ref=e24]: Cameras
+          - listitem [ref=e25]:
+            - link "Phone, Tablets & Ipod" [ref=e26] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=57
+              - img [ref=e28]
+              - generic [ref=e31]: Phone, Tablets & Ipod
+          - listitem [ref=e32]:
+            - link "Software" [ref=e33] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=17
+              - img [ref=e35]
+              - generic [ref=e38]: Software
+          - listitem [ref=e39]:
+            - link "MP3 Players" [ref=e40] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=34
+              - img [ref=e42]
+              - generic [ref=e45]: MP3 Players
+          - listitem [ref=e46]:
+            - link "Laptops & Notebooks" [ref=e47] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=18
+              - img [ref=e49]
+              - generic [ref=e52]: Laptops & Notebooks
+          - listitem [ref=e53]:
+            - link "Desktops and Monitors" [ref=e54] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=28
+              - img [ref=e56]
+              - generic [ref=e59]: Desktops and Monitors
+          - listitem [ref=e60]:
+            - link "Printers & Scanners" [ref=e61] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=30
+              - img [ref=e63]
+              - generic [ref=e66]: Printers & Scanners
+          - listitem [ref=e67]:
+            - link "Mice and Trackballs" [ref=e68] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=29
+              - img [ref=e70]
+              - generic [ref=e73]: Mice and Trackballs
+          - listitem [ref=e74]:
+            - link "Fashion and Accessories" [ref=e75] [cursor=pointer]:
+              - /url: ""
+              - img [ref=e77]
+              - generic [ref=e80]: Fashion and Accessories
+          - listitem [ref=e81]:
+            - link "Beauty and Saloon" [ref=e82] [cursor=pointer]:
+              - /url: ""
+              - img [ref=e84]
+              - generic [ref=e87]: Beauty and Saloon
+          - listitem [ref=e88]:
+            - link "Autoparts and Accessories" [ref=e89] [cursor=pointer]:
+              - /url: ""
+              - img [ref=e91]
+              - generic [ref=e94]: Autoparts and Accessories
+          - listitem [ref=e95]:
+            - link "Washing machine" [ref=e96] [cursor=pointer]:
+              - /url: ""
+              - img [ref=e98]
+              - generic [ref=e101]: Washing machine
+          - listitem [ref=e102]:
+            - link "Gaming consoles" [ref=e103] [cursor=pointer]:
+              - /url: ""
+              - img [ref=e105]
+              - generic [ref=e108]: Gaming consoles
+          - listitem [ref=e109]:
+            - link "Air conditioner" [ref=e110] [cursor=pointer]:
+              - /url: ""
+              - img [ref=e112]
+              - generic [ref=e115]: Air conditioner
+          - listitem [ref=e116]:
+            - link "Web Cameras" [ref=e117] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=32
+              - img [ref=e119]
+              - generic [ref=e122]: Web Cameras
+    - generic [ref=e123]:
+      - heading "Quick Links close" [level=5] [ref=e124]:
+        - text: Quick Links
+        - link "close" [ref=e125] [cursor=pointer]:
+          - /url: "#mz-component-162614767"
+          - text: 
+      - generic [ref=e126]:
+        - navigation [ref=e128]:
+          - list [ref=e130]:
+            - listitem [ref=e131]:
+              - link " Special Hot" [ref=e132] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/special
+                - generic [ref=e133]: 
+                - generic [ref=e135]: Special
+                - generic [ref=e136]: Hot
+            - listitem [ref=e137]:
+              - link " Wishlist" [ref=e138] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/wishlist
+                - generic [ref=e139]: 
+                - generic [ref=e141]: Wishlist
+            - listitem [ref=e142]:
+              - link " Compare" [ref=e143] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/compare
+                - generic [ref=e144]: 
+                - generic [ref=e146]: Compare
+            - listitem [ref=e147]:
+              - link " My account" [ref=e148] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/account
+                - generic [ref=e149]: 
+                - generic [ref=e151]: My account
+            - listitem [ref=e152]:
+              - link " Blog" [ref=e153] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/home
+                - generic [ref=e154]: 
+                - generic [ref=e156]: Blog
+            - listitem [ref=e157]:
+              - link " Tracking" [ref=e158] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=information/tracking
+                - generic [ref=e159]: 
+                - generic [ref=e161]: Tracking
+            - listitem [ref=e162]:
+              - link " Contact us" [ref=e163] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=information/contact
+                - generic [ref=e164]: 
+                - generic [ref=e166]: Contact us
+        - separator [ref=e168]
+        - paragraph [ref=e171]: Place here any module, widget, design or HTML. for example menu, categories
+    - generic [ref=e172]:
+      - heading "Cart close" [level=5] [ref=e173]:
+        - text: Cart
+        - link "close" [ref=e174] [cursor=pointer]:
+          - /url: "#cart-total-drawer"
+          - text: 
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - table [ref=e178]:
+            - rowgroup [ref=e179]:
+              - 'row "MacBook Pro MacBook Pro Model: Product 18 Reward Points: 800 x1 $2,000.00" [ref=e180]':
+                - cell "MacBook Pro" [ref=e181]:
+                  - link "MacBook Pro" [ref=e182] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=62
+                    - img "MacBook Pro" [ref=e183]
+                - 'cell "MacBook Pro Model: Product 18 Reward Points: 800" [ref=e184]':
+                  - link "MacBook Pro" [ref=e185] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=62
+                  - text: "Model: Product 18"
+                  - text: "Reward Points: 800"
+                - cell "x1" [ref=e186]
+                - cell "$2,000.00" [ref=e187]
+          - table [ref=e188]:
+            - rowgroup [ref=e189]:
+              - 'row "Sub-Total: $2,000.00" [ref=e190]':
+                - cell "Sub-Total:" [ref=e191]
+                - cell "$2,000.00" [ref=e192]:
+                  - strong [ref=e193]: $2,000.00
+              - 'row "Total: $2,000.00" [ref=e194]':
+                - cell "Total:" [ref=e195]
+                - cell "$2,000.00" [ref=e196]:
+                  - strong [ref=e197]: $2,000.00
+        - generic [ref=e199]:
+          - button " Edit cart" [ref=e201] [cursor=pointer]:
+            - generic [ref=e202]: 
+            - text: Edit cart
+          - button " Checkout" [ref=e204] [cursor=pointer]:
+            - generic [ref=e205]: 
+            - text: Checkout
+    - text: 
+    - generic:    
+    - text:  
+    - generic [ref=e206]:
+      - banner [ref=e207]:
+        - button "" [ref=e209] [cursor=pointer]:
+          - generic [ref=e210]: 
+        - generic [ref=e211]:
+          - generic [ref=e212]:
+            - figure [ref=e214]:
+              - link "Poco Electro" [ref=e215] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+                - img "Poco Electro" [ref=e216]
+            - generic [ref=e220]:
+              - generic [ref=e222]:
+                - button "All Categories" [ref=e224] [cursor=pointer]
+                - textbox "Search For Products" [ref=e226]: macbook pro
+              - button "Search" [ref=e228] [cursor=pointer]
+            - link "Compare" [ref=e230] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/compare
+              - generic "Compare" [ref=e231]:
+                - img [ref=e232]
+            - link "Wishlist" [ref=e235] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/wishlist
+              - generic "Wishlist" [ref=e236]:
+                - img [ref=e237]
+            - button "1" [ref=e240] [cursor=pointer]:
+              - generic [ref=e241]:
+                - img [ref=e243]
+                - generic [ref=e245]: "1"
+          - text: 
+        - generic [ref=e246]:
+          - generic [ref=e248] [cursor=pointer]:
+            - button "Shop by Category" [ref=e250]:
+              - img [ref=e252]
+              - text: Shop by Category
+            - navigation [ref=e255]:
+              - list [ref=e257]:
+                - listitem [ref=e258]:
+                  - link "Home" [ref=e259]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+                    - generic [ref=e261]: Home
+                - listitem [ref=e262]:
+                  - link "Special Hot" [ref=e263]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/special
+                    - generic [ref=e265]: Special
+                    - generic [ref=e266]: Hot
+                - listitem [ref=e267]:
+                  - link "Blog" [ref=e268]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/home
+                    - generic [ref=e270]: Blog
+                - listitem [ref=e271]:
+                  - button "Mega Menu" [ref=e272]:
+                    - generic [ref=e274]: Mega Menu
+                - listitem [ref=e275]:
+                  - button "AddOns Featured" [ref=e276]:
+                    - generic [ref=e278]: AddOns
+                    - generic [ref=e279]: Featured
+                - listitem [ref=e280]:
+                  - button " My account" [ref=e281]:
+                    - generic [ref=e282]: 
+                    - generic [ref=e284]: My account
+          - text:  
+          - paragraph [ref=e287]:
+            - strong [ref=e288]: This is a dummy website for Web Automation Testing
+      - generic [ref=e289]:
+        - figure [ref=e293]:
+          - link "Apple Cinema 30\"" [ref=e294] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=42
+            - img "Apple Cinema 30\"" [ref=e295]
+        - generic [ref=e297]:
+          - navigation "breadcrumb" [ref=e299]:
+            - list [ref=e300]:
+              - listitem [ref=e301]:
+                - link "Home" [ref=e302] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+                  - generic [ref=e303]: 
+              - listitem [ref=e304]:
+                - text: /
+                - link "Software" [ref=e305] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=17
+              - listitem [ref=e306]:
+                - text: /
+                - link "Search" [ref=e307] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/search&search=macbook pro
+              - listitem [ref=e308]: / MacBook Pro
+          - generic [ref=e309]:
+            - generic [ref=e310]:
+              - generic [ref=e312]:
+                - generic [ref=e313]:
+                  - button "" [ref=e314] [cursor=pointer]:
+                    - text: 
+                    - generic [ref=e315]: 
+                  - link "MacBook Pro" [ref=e316] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/image/cache/catalog/maza/demo/mz_poco/megastore-2/product/14-500x500.webp
+                    - img "MacBook Pro" [ref=e317]
+                - generic [ref=e319]:
+                  - generic [ref=e320]:
+                    - group "1 / 5" [ref=e321]:
+                      - link "MacBook Pro" [ref=e322] [cursor=pointer]:
+                        - /url: https://ecommerce-playground.lambdatest.io/image/cache/catalog/maza/demo/mz_poco/megastore-2/product/5-500x500.webp
+                        - img "MacBook Pro" [ref=e323]
+                    - group "2 / 5" [ref=e324]:
+                      - link "MacBook Pro" [ref=e325] [cursor=pointer]:
+                        - /url: https://ecommerce-playground.lambdatest.io/image/cache/catalog/maza/demo/mz_poco/megastore-2/product/9-500x500.webp
+                        - img "MacBook Pro" [ref=e326]
+                    - group "3 / 5" [ref=e327]:
+                      - link "MacBook Pro" [ref=e328] [cursor=pointer]:
+                        - /url: https://ecommerce-playground.lambdatest.io/image/cache/catalog/maza/demo/mz_poco/megastore-2/product/10-500x500.webp
+                        - img "MacBook Pro" [ref=e329]
+                    - group "4 / 5" [ref=e330]:
+                      - link "MacBook Pro" [ref=e331] [cursor=pointer]:
+                        - /url: https://ecommerce-playground.lambdatest.io/image/cache/catalog/maza/demo/mz_poco/megastore-2/product/3-500x500.webp
+                        - img "MacBook Pro" [ref=e332]
+                    - group "5 / 5" [ref=e333]:
+                      - link "MacBook Pro" [ref=e334] [cursor=pointer]:
+                        - /url: https://ecommerce-playground.lambdatest.io/image/cache/catalog/maza/demo/mz_poco/megastore-2/product/2-500x500.webp
+                        - img "MacBook Pro" [ref=e335]
+                  - text: 
+                  - button "Next slide" [ref=e336]:
+                    - generic [ref=e337]: 
+                  - text:  
+              - text:      
+              - generic [ref=e338]:
+                - tablist [ref=e341]:
+                  - listitem [ref=e342]:
+                    - tab "Description" [selected] [ref=e343] [cursor=pointer]
+                  - listitem [ref=e344]:
+                    - tab "Reviews" [ref=e345] [cursor=pointer]
+                  - listitem [ref=e346]:
+                    - tab "Custom" [ref=e347] [cursor=pointer]
+                - generic [ref=e351]:
+                  - generic [ref=e353]:
+                    - paragraph [ref=e354]: Latest Intel mobile architecture
+                    - paragraph [ref=e355]: Powered by the most advanced mobile processors from Intel, the new Core 2 Duo MacBook Pro is over 50% faster than the original Core Duo MacBook Pro and now supports up to 4GB of RAM.
+                    - paragraph [ref=e356]: Leading-edge graphics
+                    - paragraph [ref=e357]: The NVIDIA GeForce 8600M GT delivers exceptional graphics processing power. For the ultimate creative canvas, you can even configure the 17-inch model with a 1920-by-1200 resolution display.
+                    - paragraph [ref=e358]: Designed for life on the road
+                    - paragraph [ref=e359]: Innovations such as a magnetic power connection and an illuminated keyboard with ambient light sensor put the MacBook Pro in a class by itself.
+                    - paragraph [ref=e360]: Connect. Create. Communicate.
+                    - paragraph [ref=e361]: Quickly set up a video conference with the built-in iSight camera. Control presentations and media from up to 30 feet away with the included Apple Remote. Connect to high-bandwidth peripherals with FireWire 800 and DVI.
+                    - paragraph [ref=e362]: Next-generation wireless
+                    - paragraph [ref=e363]: Featuring 802.11n wireless technology, the MacBook Pro delivers up to five times the performance and up to twice the range of previous-generation technologies.
+                  - link " Read more" [ref=e365] [cursor=pointer]:
+                    - /url: "#"
+                    - generic [ref=e366]: 
+                    - text: Read more
+            - generic [ref=e367]:
+              - heading "MacBook Pro" [level=1] [ref=e369]
+              - list [ref=e373]:
+                - listitem [ref=e374]: "Product Code: Product 18"
+              - separator [ref=e376]
+              - generic [ref=e378]:
+                - list [ref=e380]:
+                  - listitem [ref=e381]:
+                    - text: "Brand:"
+                    - link "Apple" [ref=e382] [cursor=pointer]:
+                      - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/manufacturer/info&manufacturer_id=8
+                  - listitem [ref=e383]: "Viewed: 34728"
+                  - listitem [ref=e384]: "Reward Points: 800"
+                  - listitem [ref=e385]:
+                    - text: "Availability:"
+                    - generic [ref=e386]: In Stock
+                - figure [ref=e388]:
+                  - link "Apple" [ref=e389] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/manufacturer/info&manufacturer_id=8
+                    - img "Apple" [ref=e390]
+              - separator [ref=e392]
+              - generic [ref=e397]:
+                - heading "$2,000.00" [level=3] [ref=e398]
+                - generic [ref=e400] [cursor=pointer]: 
+              - generic [ref=e402]:
+                - generic [ref=e404]:
+                  - generic [ref=e406] [cursor=pointer]:
+                    - button "Decrease quantity" [ref=e408]:
+                      - generic [ref=e409]: 
+                    - spinbutton "Qty" [ref=e410]: "1"
+                    - button "Increase quantity" [ref=e412]:
+                      - generic [ref=e413]: 
+                  - button "Add to Cart" [ref=e415] [cursor=pointer]
+                  - button "Buy now" [ref=e417] [cursor=pointer]
+                - button " Compare this Product" [ref=e419] [cursor=pointer]:
+                  - generic [ref=e420]:
+                    - generic [ref=e421]: 
+                    - text: 
+                  - text: Compare this Product
+              - generic [ref=e423]:
+                - button "Size chart" [ref=e425] [cursor=pointer]:
+                  - generic [ref=e426]: 
+                  - text: Size chart
+                - button "Popup" [ref=e428] [cursor=pointer]:
+                  - generic [ref=e429]: 
+                  - text: Popup
+                - button "Ask Question" [ref=e431] [cursor=pointer]:
+                  - generic [ref=e432]: 
+                  - text: Ask Question
+              - paragraph [ref=e434]:
+                - strong [ref=e435]: "Tags:"
+                - link "Apple" [ref=e436] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/search&tag=Apple
+                - link "MacBook" [ref=e437] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/search&tag=MacBook
+              - separator [ref=e439]
+              - generic [ref=e441]:
+                - generic [ref=e443]:
+                  - img [ref=e445]
+                  - heading "Online payment" [level=5] [ref=e451]
+                - generic [ref=e453]:
+                  - img [ref=e455]
+                  - heading "Easy Return" [level=5] [ref=e460]
+                - generic [ref=e462]:
+                  - img [ref=e464]
+                  - heading "24x7 Service" [level=5] [ref=e471]
+              - generic [ref=e473]:
+                - generic [ref=e474]:
+                  - generic [ref=e475]: 0/50 reviews
+                  - generic [ref=e476]:
+                    - generic [ref=e477] [cursor=pointer]: ★ 5
+                    - generic [ref=e478] [cursor=pointer]: ★ 4
+                    - generic [ref=e479] [cursor=pointer]: ★ 3
+                    - generic [ref=e480] [cursor=pointer]: ★ 2
+                    - generic [ref=e481] [cursor=pointer]: ★ 1
+                    - generic [ref=e482] [cursor=pointer]: ★ 0
+                - heading "Write a review" [level=5] [ref=e483]
+                - textbox "Your Name" [ref=e485]
+                - textbox "Your Review" [ref=e487]
+                - button "Write Review" [ref=e490] [cursor=pointer]
+        - generic [ref=e493]:
+          - heading "FAQ (Frequently Asked Questions)" [level=3] [ref=e494]
+          - generic [ref=e495]:
+            - heading "How can I change my shipping address? " [level=5] [ref=e498] [cursor=pointer]:
+              - generic [ref=e499]: How can I change my shipping address?
+              - generic [ref=e500]: 
+            - heading "How can I change my shipping address? " [level=5] [ref=e503] [cursor=pointer]:
+              - generic [ref=e504]: How can I change my shipping address?
+              - generic [ref=e505]: 
+            - heading "How do I activate my account? " [level=5] [ref=e508] [cursor=pointer]:
+              - generic [ref=e509]: How do I activate my account?
+              - generic [ref=e510]: 
+            - heading "What do you mean by points? How do I earn it? " [level=5] [ref=e513] [cursor=pointer]:
+              - generic [ref=e514]: What do you mean by points? How do I earn it?
+              - generic [ref=e515]: 
+            - heading "Why is there a checkout limit? / What are all the checkout limits? " [level=5] [ref=e518] [cursor=pointer]:
+              - generic [ref=e519]: Why is there a checkout limit? / What are all the checkout limits?
+              - generic [ref=e520]: 
+            - heading "Why must I make payment immediately at checkout? " [level=5] [ref=e523] [cursor=pointer]:
+              - generic [ref=e524]: Why must I make payment immediately at checkout?
+              - generic [ref=e525]: 
+      - contentinfo [ref=e526]:
+        - paragraph [ref=e532]: © LambdaTest - Powered by OpenCart
+  - text:  

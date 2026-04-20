@@ -1,0 +1,6 @@
+[     885ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eafff0432cf38:0
+[     914ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eafff0432cf38:0
+[  431743ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eafff0432cf38:0
+[  431806ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eafff0432cf38:0
+[  432097ms] [LOG] 542 @ https://ecommerce-playground.lambdatest.io/catalog/view/theme/mz_poco/asset/javascript/megastore-2.28/combine/04bcdac7c9d2cbec95396279dec0f249all.js:32
+[  432240ms] [LOG] 542 @ https://ecommerce-playground.lambdatest.io/catalog/view/theme/mz_poco/asset/javascript/megastore-2.28/combine/04bcdac7c9d2cbec95396279dec0f249all.js:32
