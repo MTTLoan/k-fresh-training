@@ -15,7 +15,7 @@ export default defineConfig({
   retries: 1,
   use: {
     browserName: "chromium",
-    headless: false,
+    headless: process.env.HEADLESS ? true : false,
     screenshot: "only-on-failure",
     trace: "retain-on-failure",
   },
