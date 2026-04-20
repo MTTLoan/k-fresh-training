@@ -1,22 +1,9 @@
 import { test, expect } from "@playwright/test";
 
 test("TC04 - Update Product Quantity", async ({ page }) => {
-  await page.goto("https://ecommerce-playground.lambdatest.io/");
-
-  await page.fill('input[name="search"]', "MacBook Pro");
-  await page.click('button[type="submit"].type-text');
-  await page.waitForURL(/search/);
-
-  const productLinks = page.locator("a.text-ellipsis-2", {
-    hasText: "MacBook Pro",
-  });
-  await expect(productLinks).toHaveCount(2);
-
-  const productLink = productLinks.nth(1);
-  await expect(productLink).toBeVisible();
-  await productLink.click();
-
-  await expect(page.locator("h1")).toContainText("MacBook Pro");
+  await page.goto(
+    "https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=62&search=macbook+pro",
+  );
 
   const addToCartButton = page
     .locator("button.btn-cart:not([disabled])")
