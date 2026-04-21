@@ -2,6 +2,12 @@ import { defineConfig } from "@playwright/test";
 import dotenv from "dotenv";
 import path from "node:path";
 
+const envFile = `.env.${process.env.ENV || "qa"}`;
+console.log(`Loading environment variables from ${envFile}`);
+dotenv.config({
+  path: path.resolve(__dirname, "profiles", envFile),
+});
+
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
@@ -19,4 +25,17 @@ export default defineConfig({
     screenshot: "only-on-failure",
     trace: "retain-on-failure",
   },
+  projects: [
+    {
+      name: "chromium",
+    },
+
+    {
+      name: "firefox",
+    },
+
+    {
+      name: "webkit",
+    },
+  ],
 });

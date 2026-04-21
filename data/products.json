@@ -1,0 +1,20 @@
+{
+  "qa": {
+    "name": "MacBook Pro",
+    "quantity": 2,
+    "unitPrice": "$2,000.00",
+    "totalPrice": "$4,000.00"
+  },
+  "staging": {
+    "name": "MacBook Pro",
+    "quantity": 2,
+    "unitPrice": "$2,000.00",
+    "totalPrice": "$4,000.00"
+  },
+  "production": {
+    "name": "MacBook Pro",
+    "quantity": 2,
+    "unitPrice": "$2,000.00",
+    "totalPrice": "$4,000.00"
+  }
+}
