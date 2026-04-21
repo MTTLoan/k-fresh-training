@@ -4,6 +4,7 @@ import { CartPage } from "./cart-page";
 import { ProductPage } from "./product-page";
 import { LoginPage } from "./login-page";
 import { RegisterPage } from "./register-page";
+import { CheckoutPage } from "./checkout-page";
 
 export const test = baseTest.extend<{
   cartPage: CartPage;
@@ -11,6 +12,7 @@ export const test = baseTest.extend<{
   productPage: ProductPage;
   loginPage: LoginPage;
   registerPage: RegisterPage;
+  checkoutPage: CheckoutPage;
 }>({
   cartPage: async ({ page, context }, use) => {
     const instance = new CartPage(page);
@@ -46,6 +48,14 @@ export const test = baseTest.extend<{
 
   registerPage: async ({ page, context }, use) => {
     const instance = new RegisterPage(page);
+    context.on("page", (newPage: Page) => {
+      instance.setPage(newPage);
+    });
+    await use(instance);
+  },
+
+  checkoutPage: async ({ page, context }, use) => {
+    const instance = new CheckoutPage(page);
     context.on("page", (newPage: Page) => {
       instance.setPage(newPage);
     });

@@ -13,6 +13,7 @@ export class CartLocators extends CommonLocators {
   editCartButton!: Locator;
   mainCartMessage!: Locator;
   cartModifiedSuccessMessage!: Locator;
+  checkoutButton!: Locator;
 
   initializeLocators() {
     super.initializeLocators();
@@ -26,6 +27,7 @@ export class CartLocators extends CommonLocators {
     this.cartModifiedSuccessMessage = this.page
       .locator("xpath=//*[contains(@class,'alert-success')]")
       .first();
+    this.checkoutButton = this.page.getByRole('link', { name: 'Checkout', exact: true })
   }
 
   productRow(productName: string): Locator {

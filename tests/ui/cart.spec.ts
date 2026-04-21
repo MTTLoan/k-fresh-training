@@ -5,6 +5,7 @@ import { Constants } from "../../utilities/constants";
 import { getEnvProduct } from "../../data/data-loader";
 import { faker } from "@faker-js/faker";
 import { RegisterPage } from "../../pages/register-page";
+import { Order } from "../../models/Order";
 
 const product: Product = getEnvProduct();
 const user: User = {
@@ -14,7 +15,14 @@ const user: User = {
   telephone: faker.phone.number({ style: "national" }),
   password: faker.internet.password({ length: 12 }),
 };
-
+const order: Order = {
+  company: faker.company.name(),
+  address: faker.location.streetAddress(),
+  city: faker.location.city(),
+  postcode: faker.location.zipCode(),
+  country: "United States",
+  region: "California",
+};
 
 test.describe("Cart Tests", () => {
   test.beforeAll(async ({ browser }) => {
@@ -112,4 +120,28 @@ test.describe("Cart Tests", () => {
     await cartPage.updateProductQuantity(product.name, 0);
     await cartPage.verifyProductRemovedFromCart(product.name);
   });
+
+  test("TC06 - E2E Add Checkout Process", async ({ productPage, cartPage, checkoutPage }) => {
+      await productPage.commonPage.goto(Constants.PRODUCT_PAGE_URL);
+      await productPage.increaseQuantity(product.quantity);
+      await productPage.clickAddToCart();
+      await productPage.verifyAddToCartSuccessMessage(Constants.ADD_TO_CART_SUCCESS_MESSAGE);
+      await productPage.clickViewCartLink();
+      await cartPage.verifyCartPageLoaded();
+      await cartPage.verifyCartContainsProduct(product.name);
+      await cartPage.clickCheckoutButton();
+      await checkoutPage.fillBillingDetails(
+        user.firstName,
+        user.lastName,
+        order.company,
+        order.address,
+        order.city,
+        order.postcode,
+        order.country,
+        order.region
+      );
+      await checkoutPage.agreeTermsAndContinue();
+      await checkoutPage.confirmOrder();
+      await checkoutPage.verifyOrderSuccess();
+    });
 });

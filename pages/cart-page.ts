@@ -109,4 +109,11 @@ export class CartPage extends CartLocators {
       expectedMessage,
     );
   }
+
+  /**
+   * Clicks the checkout button to proceed to the checkout page
+   */
+  async clickCheckoutButton() {
+    await this.checkoutButton.click();
+  }
 }
