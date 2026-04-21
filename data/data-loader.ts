@@ -1,6 +1,6 @@
 import { resolve } from "path";
 import { readJsonFile } from "../utilities/jsonHandling";
-import { Product } from "../models/product";
+import { Product } from "../models/Product";
 import { ENV } from "../models/index";
 
 const productsJsonPath = resolve(__dirname, "products.json");
