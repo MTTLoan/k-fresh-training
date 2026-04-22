@@ -13,19 +13,17 @@ export class CartLocators extends CommonLocators {
   editCartButton!: Locator;
   mainCartMessage!: Locator;
   cartModifiedSuccessMessage!: Locator;
+  checkoutButton!: Locator;
 
   initializeLocators() {
     super.initializeLocators();
     this.cartButton = this.page.locator("(//div[@class='cart-icon'])[1]");
-    this.cartDrawerMessage = this.page.locator("#entry_217847");
+    this.cartDrawerMessage = this.page.locator("//div[contains(@class,'widget-total')]");
     this.cartDrawerTotalLabel = this.page.locator("//td[text()='Total:']/following-sibling::td/strong");
     this.editCartButton = this.page.getByRole("button", { name: "Edit cart" });
-    this.mainCartMessage = this.page.locator(
-      "//h1[contains(@class,'page-title')]/following-sibling::p",
-    );
-    this.cartModifiedSuccessMessage = this.page
-      .locator("xpath=//*[contains(@class,'alert-success')]")
-      .first();
+    this.mainCartMessage = this.page.locator("//h1[contains(@class,'page-title')]/following-sibling::p");
+    this.cartModifiedSuccessMessage = this.page.locator("//div[@class='alert alert-success alert-dismissible']").first();
+    this.checkoutButton = this.page.getByRole('link', { name: 'Checkout', exact: true })
   }
 
   productRow(productName: string): Locator {

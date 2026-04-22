@@ -1,0 +1,13 @@
+import { faker } from "@faker-js/faker";
+import { Order } from "../models/Order";
+
+export const generateOrderData = (): Order => {
+  return {
+    company: faker.company.name(),
+    address: faker.location.streetAddress(),
+    city: faker.location.city(),
+    postcode: faker.location.zipCode(),
+    country: "United States",
+    region: "California",
+  };
+};
