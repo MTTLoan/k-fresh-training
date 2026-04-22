@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { readFileSync } from 'node:fs';
 
 /**
  *  Reads a JSON file and parses its contents into a TypeScript type.
@@ -6,6 +6,6 @@ import { readFileSync } from "node:fs";
  * @returns The parsed JSON data as the specified type T.
  */
 export function readJsonFile<T>(filePath: string): T {
-  const fileContents = readFileSync(filePath, "utf8");
+  const fileContents = readFileSync(filePath, 'utf8');
   return JSON.parse(fileContents) as T;
 }

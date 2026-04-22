@@ -1,10 +1,10 @@
-import { test as baseTest, type Page } from "@playwright/test";
-import { CommonPage } from "./common-page";
-import { CartPage } from "./cart-page";
-import { ProductPage } from "./product-page";
-import { LoginPage } from "./login-page";
-import { RegisterPage } from "./register-page";
-import { CheckoutPage } from "./checkout-page";
+import { test as baseTest, type Page } from '@playwright/test';
+import { CommonPage } from './common-page';
+import { CartPage } from './cart-page';
+import { ProductPage } from './product-page';
+import { LoginPage } from './login-page';
+import { RegisterPage } from './register-page';
+import { CheckoutPage } from './checkout-page';
 
 export const test = baseTest.extend<{
   cartPage: CartPage;
@@ -16,7 +16,7 @@ export const test = baseTest.extend<{
 }>({
   cartPage: async ({ page, context }, use) => {
     const instance = new CartPage(page);
-    context.on("page", (newPage: Page) => {
+    context.on('page', (newPage: Page) => {
       instance.setPage(newPage);
     });
     await use(instance);
@@ -24,7 +24,7 @@ export const test = baseTest.extend<{
 
   commonPage: async ({ page, context }, use) => {
     const instance = new CommonPage(page);
-    context.on("page", (newPage: Page) => {
+    context.on('page', (newPage: Page) => {
       instance.setPage(newPage);
     });
     await use(instance);
@@ -32,7 +32,7 @@ export const test = baseTest.extend<{
 
   productPage: async ({ page, context }, use) => {
     const instance = new ProductPage(page);
-    context.on("page", (newPage: Page) => {
+    context.on('page', (newPage: Page) => {
       instance.setPage(newPage);
     });
     await use(instance);
@@ -40,7 +40,7 @@ export const test = baseTest.extend<{
 
   loginPage: async ({ page, context }, use) => {
     const instance = new LoginPage(page);
-    context.on("page", (newPage: Page) => {
+    context.on('page', (newPage: Page) => {
       instance.setPage(newPage);
     });
     await use(instance);
@@ -48,7 +48,7 @@ export const test = baseTest.extend<{
 
   registerPage: async ({ page, context }, use) => {
     const instance = new RegisterPage(page);
-    context.on("page", (newPage: Page) => {
+    context.on('page', (newPage: Page) => {
       instance.setPage(newPage);
     });
     await use(instance);
@@ -56,7 +56,7 @@ export const test = baseTest.extend<{
 
   checkoutPage: async ({ page, context }, use) => {
     const instance = new CheckoutPage(page);
-    context.on("page", (newPage: Page) => {
+    context.on('page', (newPage: Page) => {
       instance.setPage(newPage);
     });
     await use(instance);
