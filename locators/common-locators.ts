@@ -1,33 +1,55 @@
-import { Locator, Page } from "@playwright/test";
+import { Locator, Page } from '@playwright/test';
 
+/**
+ * Class representing common locators 
+ */
 export class CommonLocators {
   page: Page;
 
+  /**
+   * Creates an instance of CommonLocators
+   * @param page
+   */
   constructor(page: Page) {
     this.page = page;
     this.initializeLocators();
   }
 
-  setPage(newPage: Page) {
+  /**
+   * Sets the page object   
+   * @param newPage
+   */
+  setPage(newPage: Page): void {
     this.page = newPage;
     this.initializeLocators();
   }
 
-  getPage() {
+  /**
+   * Gets the page object
+   * @returns Page
+   */
+  getPage(): Page {
     return this.page;
   }
 
-  submitButton!: Locator;
-  saveButton!: Locator;
-  successMessage!: Locator;
-  errorMessage!: Locator;
-  clickButton!: Locator;
+  btnSubmit!: Locator;
+  btnSave!: Locator;
+  divSuccessMessage!: Locator;
+  divErrorMessage!: Locator;
+  btnClick!: Locator;
 
-  initializeLocators() {
-    this.submitButton = this.page.getByRole("button", { name: "Submit" });
-    this.saveButton = this.page.getByRole("button", { name: "Save" });
-    this.successMessage = this.page.locator("xpath=//*[contains(@class,'flash') and contains(@class,'success')]");
-    this.errorMessage = this.page.locator("xpath=//*[contains(@class,'flash') and contains(@class,'error')]");
-    this.clickButton = this.page.getByRole("button");
+  /**
+   * Initializes locators
+   */
+  initializeLocators(): void {
+    this.btnSubmit = this.page.getByRole('button', { name: 'Submit' });
+    this.btnSave = this.page.getByRole('button', { name: 'Save' });
+    this.divSuccessMessage = this.page.locator(
+      'xpath=//*[contains(@class,\'flash\') and contains(@class,\'success\')]',
+    );
+    this.divErrorMessage = this.page.locator(
+      'xpath=//*[contains(@class,\'flash\') and contains(@class,\'error\')]',
+    );
+    this.btnClick = this.page.getByRole('button');
   }
 }

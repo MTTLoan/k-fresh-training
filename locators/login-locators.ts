@@ -1,20 +1,30 @@
-import { Locator, Page } from "@playwright/test";
-import { CommonLocators } from "./common-locators";
+import { Locator, Page } from '@playwright/test';
+import { CommonLocators } from './common-locators';
 
+/**
+ * Class representing login locators
+ */
 export class LoginLocators extends CommonLocators {
+  /**
+   * Creates an instance of LoginLocators
+   * @param page
+   */
   constructor(page: Page) {
     super(page);
     this.initializeLocators();
   }
 
-  emailInput!: Locator;
-  passwordInput!: Locator;
-  loginButton!: Locator;
+  inputEmail!: Locator;
+  inputPassword!: Locator;
+  btnLogin!: Locator;
 
-  initializeLocators() {
+  /**
+   * Initializes locators
+   */
+  initializeLocators(): void {
     super.initializeLocators();
-    this.emailInput = this.page.locator("#input-email");
-    this.passwordInput = this.page.locator("#input-password");
-    this.loginButton = this.page.locator("input[value='Login']");
+    this.inputEmail = this.page.locator('#input-email');
+    this.inputPassword = this.page.locator('#input-password');
+    this.btnLogin = this.page.locator('input[value=\'Login\']');
   }
 }

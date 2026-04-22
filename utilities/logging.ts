@@ -1,4 +1,4 @@
-import { test } from "@playwright/test";
+import { test } from '@playwright/test';
 
 /**
  * A decorator function that wraps the target method in a `test.step` block for step-based reporting.

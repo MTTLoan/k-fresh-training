@@ -1,9 +1,9 @@
-import { resolve } from "path";
-import { readJsonFile } from "../utilities/jsonHandling";
-import { Product } from "../models/Product";
-import { ENV } from "../models/index";
+import { resolve } from 'path';
+import { readJsonFile } from '../utilities/jsonHandling';
+import { Product } from '../models/Product';
+import { ENV } from '../models/index';
 
-const productsJsonPath = resolve(__dirname, "products.json");
+const productsJsonPath = resolve(__dirname, 'products.json');
 const productsByEnv: Record<string, Product> = readJsonFile(productsJsonPath);
 
 /**
@@ -13,7 +13,7 @@ const productsByEnv: Record<string, Product> = readJsonFile(productsJsonPath);
  * @returns The product data object for the specified environment
  */
 export function getEnvProduct(
-  env: string = (process.env.ENV as ENV) || "production",
+  env: string = (process.env.ENV as ENV) || 'production',
 ): Product {
   return productsByEnv[env] ?? productsByEnv.production;
 }
