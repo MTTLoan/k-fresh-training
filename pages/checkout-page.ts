@@ -1,6 +1,9 @@
-import { expect, Page } from "@playwright/test";
+import { expect, Page, test } from "@playwright/test";
 import { CheckoutLocators } from "../locators/checkout-locators";
 import { CommonPage } from "./common-page";
+import { User } from "../models/User";
+import { Order } from "../models/Order";
+import { step } from "../utilities/logging";
 
 export class CheckoutPage extends CheckoutLocators {
   commonPage: CommonPage;
@@ -12,50 +15,52 @@ export class CheckoutPage extends CheckoutLocators {
 
   /**
    * Fills the billing address details.
+   * @param user
+   * @param order
    */
-  async fillBillingDetails(
-    firstName: string,
-    lastName: string,
-    company: string,
-    address1: string,
-    city: string,
-    postcode: string,
-    country: string,
-    region: string
-  ) {
-    await this.firstNameInput.fill(firstName);
-    await this.lastNameInput.fill(lastName);
-    await this.companyInput.fill(company);
-    await this.address1Input.fill(address1);
-    await this.cityInput.fill(city);
-    await this.postcodeInput.fill(postcode);
-    
-    // Select country by label to trigger region update
-    await this.countrySelect.selectOption({ label: country });
-    // Wait for the region dropdown to update before selecting
-    await this.page.waitForTimeout(1000); 
-    await this.regionSelect.selectOption({ label: region });
+  @step("Filling in the billing address details")
+  async fillBillingDetails( user : User, order : Order ): Promise<void> {
+    await test.step("Filling in the billing address details", async () => {
+      await this.firstNameInput.fill(user.firstName);
+      await this.lastNameInput.fill(user.lastName);
+      await this.companyInput.fill(order.company);
+      await this.address1Input.fill(order.address);
+      await this.cityInput.fill(order.city);
+      await this.postcodeInput.fill(order.postcode);
+      await this.countrySelect.selectOption({ label: order.country });
+      await this.page.waitForTimeout(1000); 
+      await this.regionSelect.selectOption({ label: order.region });
+    })
   }
 
   /**
    * Agrees to terms and continues to the final confirmation step.
    */
-  async agreeTermsAndContinue() {
-    await this.termsCheckbox.click();
-    await this.continueButton.click();
+  @step("Agreeing to terms and continuing to the final confirmation step")
+  async agreeTermsAndContinue(): Promise<void> {
+    await test.step("Agreeing to terms and continuing to the final confirmation step", async () => {
+      await this.termsCheckbox.click();
+      await this.continueButton.click();
+    })
   }
 
   /**
    * Confirms the order.
    */
-  async confirmOrder() {
-    await this.confirmOrderButton.click();
+  @step("Confirming the order")
+  async confirmOrder(): Promise<void> {
+    await test.step("Confirming the order", async () => {
+      await this.confirmOrderButton.click();
+    })
   }
 
   /**
    * Verifies order success page has loaded.
    */
-  async verifyOrderSuccess() {
-    await expect(this.page).toHaveURL(/route=checkout\/success/);
+  @step("Verifying that the order success page has loaded")
+  async verifyOrderSuccess(): Promise<void> {
+    await test.step("Verifying that the order success page has loaded", async () => {
+      await expect(this.page).toHaveURL(/route=checkout\/success/);
+    })
   }
 }
